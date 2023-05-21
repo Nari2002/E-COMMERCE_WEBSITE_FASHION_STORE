@@ -1,0 +1,315 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>NARI FABRICS HOME PAGE</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/logo.png' %}" rel="icon">
+    <link href="{% static 'assets/img/logo.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+    <form action="" method="POST">{% csrf_token %}
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top ">
+            <div class="container d-flex align-items-center">
+
+                <h1 class="logo me-auto"><a href="index.html">NARI FABRICS LIMITED</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                        <li><a class="nav-link scrollto" href="#about">About</a></li>
+                        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                        <li><a class="nav-link scrollto" href="{% url 'login' %}">Logout</a></li>
+                        <li><a class="getstarted scrollto" href="#our products">Get Started</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <!-- .navbar -->
+
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex align-items-center">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                        <h1>LIVE FOR FASHION</h1>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <a href="#our products" class="btn-get-started scrollto">Get Started</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="{% static 'assets/img/cta-bg.jpg' %}" class="img-fluid animated" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <main id="main">
+            <br>
+            <h3 align="center">Our Brands</h3>
+            <br>
+            <section id="clients" class="clients section-bg">
+                <div class="container">
+
+                    <div class="row" data-aos="zoom-in">
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <a href="https://www2.hm.com/en_in/index.html" alt=""><img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt=""></a>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <a href="https://www.zara.com/in/" alt=""><img src="{% static 'assets/img/clients/client-2.png' %}" class="img-fluid" alt=""></a>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <a href="https://in.puma.com/in/en" alt=""><img src="{% static 'assets/img/clients/client-3.png' %}" class="img-fluid" alt=""></a>
+
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <a href="https://www.nike.com/in/" alt=""><img src="{% static 'assets/img/clients/client-4.png' %}" class="img-fluid" alt=""></a>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <a href="https://www.calvinklein.us/en" alt=""><img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt=""></a>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <a href="https://www.levi.in/" alt=""><img src="{% static 'assets/img/clients/client-6.png' %}" class="img-fluid" alt=""></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <br>
+            <section id="our products" class="our products">
+                <br>
+                <h3 align="center">Our Products</h3>
+                <br>
+                <h3 align="center">
+                    <ul><br>
+                        <li><a href="https://www.myntra.com/men-casual-shirts" alt=""><b>Shirts</b></a></li>
+                        <br>
+                        <li>
+                            <a href="https://www.myntra.com/men-jeans" alt=""><b>Jeans</b></a></li><br>
+                        <li>
+                            <a href="https://www.myntra.com/men-innerwear" alt=""><b> Men</b></a></li><br>
+                        <li>
+                            <a href="https://www.myntra.com/gadgets" alt=""><b>Accessiors</b></a></li><br>
+                        <li>
+                            <a href="https://www.myntra.com/shop/women" alt=""><b>Women shopping</b></a></li><br>
+                    </ul>
+                </h3>
+            </section>
+            <section id="about" class="about">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="section-title">
+                        <h2>About Us</h2>
+                    </div>
+
+                    <div class="row content">
+                        <div class="col-lg-6">
+                            <p>
+                                our goal is to provide a seamless and enjoyable shopping experience for our customers. We strive to offer a wide range of products that meet our customers' needs and preferences, from everyday essentials to unique and hard-to-find items.</p>
+                            <ul>
+                                <li><i class="ri-check-double-line"></i>Our team is committed to providing exceptional customer service, with a focus on fast and reliable shipping, easy returns, and personalized support. We believe that every customer should
+                                    feel valued and heard, and we are always available to answer questions, provide recommendations, or address any concerns.</li>
+                                <li><i class="ri-check-double-line"></i>We take pride in our website's user-friendly design and intuitive navigation, which allows customers to easily browse and search for products. We also ensure that our website is secure
+                                    and up-to-date with the latest technologies to protect our customers' personal and financial information.</li>
+                                <li><i class="ri-check-double-line"></i>In addition to offering a variety of high-quality products, we are committed to providing competitive pricing and regular promotions and discounts to help our customers save money. We
+                                    also believe in giving back to our community and support various charitable causes and initiatives.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 pt-4 pt-lg-0">
+                            <p>At our shopping website, we believe that shopping should be a fun and enjoyable experience, and we are dedicated to making that a reality for our customers. Whether you are shopping for yourself or for a loved one, we hope
+                                that our website will become your go-to destination for all your shopping needs.
+                            </p>
+                            <a href="#" class="btn-learn-more">Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End About Us Section -->
+            <!-- ======= Contact Section ======= -->
+            <section id="contact" class="contact">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="section-title">
+                        <h2>Contact</h2>
+                        <p>My Self Iam NARENDER SOPPOJU happy to serve you</p>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-5 d-flex align-items-stretch">
+                            <div class="info">
+                                <div class="address">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <h4>Location:</h4>
+                                    <p>chityal, nalgonda, telangana 508114</p>
+                                </div>
+
+                                <div class="email">
+                                    <i class="bi bi-envelope"></i>
+                                    <h4>Email:</h4>
+                                    <p>soppojunarender2002@gmail.com</p>
+                                </div>
+
+                                <div class="phone">
+                                    <i class="bi bi-phone"></i>
+                                    <h4>Call:</h4>
+                                    <p>+91 9346413590</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" name="name" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="name">Your Email</label>
+                                        <input type="email" class="form-control" name="email" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Subject</label>
+                                    <input type="text" class="form-control" name="subject" id="subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Message</label>
+                                    <textarea class="form-control" name="message" rows="10" required></textarea>
+                                </div>
+                                <div class="my-3">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                </div>
+                                <div class="text-center"><button type="submit">Send Message</button></div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Contact Section -->
+
+        </main>
+        <!-- End #main -->
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h3>Narender</h3>
+                            <p>
+                                Chityal <br> Nalgonda, Telangana 508114<br> INDIA <br><br>
+                                <strong>Phone:</strong> +91 9346413590<br>
+                                <strong>Email:</strong> soppojunarender2002@gmail.com<br>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Social Networks</h4>
+                            <p>To be Update with us</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer-bottom clearfix">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Narender</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <div id="preloader"></div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+        <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+        <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+        <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+        <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+        <!-- Template Main JS File -->
+        <script src="{% static 'assets/js/main.js' %}"></script>
+    </form>
+</body>
+
+</html>
